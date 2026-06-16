@@ -11,11 +11,14 @@ This repo intentionally stays lightweight:
 
 ## Download
 
-The dataset release tarball is named:
+The dataset release tarball is published as a GitHub Release asset:
 
-- `PA_DEATH_RECORDS_622_v1.tar.gz`
+- [PA_DEATH_RECORDS_622_v1.tar.gz](https://github.com/Tahlor/pa-death-records-622/releases/download/v1/PA_DEATH_RECORDS_622_v1.tar.gz)
+- [SHA256SUMS.txt](https://github.com/Tahlor/pa-death-records-622/releases/download/v1/SHA256SUMS.txt)
 
-The public archive should be published as a GitHub Release asset for this repository.
+Release page:
+
+- [https://github.com/Tahlor/pa-death-records-622/releases/tag/v1](https://github.com/Tahlor/pa-death-records-622/releases/tag/v1)
 
 ## Official sources
 
