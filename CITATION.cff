@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this release, cite the paper and the GitHub release."
+title: "Pennsylvania Death Records 622"
+authors:
+  - name: "Tahlor"
+version: "v1.0.1"
+date-released: "2026-06-16"
+repository-code: "https://github.com/Tahlor/pa-death-records-622"
+url: "https://github.com/Tahlor/pa-death-records-622/releases/tag/v1.0.1"
