@@ -2,8 +2,6 @@
 
 Curated 622-image Pennsylvania death-record subset used in [arXiv:2509.09722](https://arxiv.org/abs/2509.09722).
 
-This repository is a public landing page for the release. It keeps the tree small, shows representative original record images, and points to a downloadable zip archive containing the full image set and release metadata.
-
 ## Download
 
 Current release:
@@ -75,12 +73,10 @@ The official CSV uses paired `_orig` and `_edt` columns for names and places, pl
 
 ## Usage notes
 
-- The examples in this README are original record images copied from the release archive, not augmented or transformed renders.
 - The official release labels are curated and may include normalization or standardization in `_edt` fields.
 - `_orig` means the source-keyed or earlier captured form that is closest to the original transcription, but it is not guaranteed to be a literal verbatim copy of the source record.
 - `_edt` means the curated and potentially normalized form used for the official release.
 - The release archive is the canonical public download.
-- The public repo does not commit the full image payload.
 
 ## Citation
 
