@@ -6,7 +6,7 @@ It is not a verbatim transcription of every source field.
 ## Field groups
 
 - `ImageFileName`: stable record key for the image/label pair.
-- `*_orig`: source text as entered or captured for curation.
+- `*_orig`: the source-keyed or earlier captured form preserved for curation. It is closer to the source transcription, but not necessarily literal or typo-free.
 - `*_edt`: curated or standardized text used for the official release.
 - `image_path`: archive-relative path to the image file in the downloadable release.
 
@@ -50,6 +50,8 @@ It is not a verbatim transcription of every source field.
 - The `_edt` fields may standardize spelling, punctuation, or geographic wording.
 - The official release keeps both the original and edited forms for transparency.
 - The stable `ImageFileName` key is the primary join field between images and labels.
+- Do not assume `_orig` values are verbatim transcriptions of the source record.
+- Do not assume `_edt` values are a different semantic entity; they are the release's preferred normalized form.
 
 ## Usage guidance
 
