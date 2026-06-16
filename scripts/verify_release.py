@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import re
 import sys
 import zipfile
 from pathlib import Path
@@ -12,6 +13,7 @@ from pathlib import Path
 EXPECTED_IMAGES = 622
 EXPECTED_LABELS = "data/official/5164_gts.csv"
 EXPECTED_EXAMPLE_LABELS = "examples/example_labels.csv"
+ABSOLUTE_PATH_RE = re.compile(r"^(?:[A-Za-z]:[\\/]|/)")
 
 
 def sha256_file(path: Path) -> str:
@@ -81,11 +83,7 @@ def main() -> int:
             print(f"missing images for {len(missing_images)} labels", file=sys.stderr)
             return 1
 
-        bad_paths = [
-            row["image_path"]
-            for row in rows
-            if row.get("image_path", "").startswith(("F:\\", "C:\\", "/home/", "/mnt/"))
-        ]
+        bad_paths = [row["image_path"] for row in rows if ABSOLUTE_PATH_RE.match(row.get("image_path", ""))]
         if bad_paths:
             print("found non-archive-relative image_path values", file=sys.stderr)
             return 1
