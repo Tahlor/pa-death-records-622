@@ -1,45 +1,43 @@
 # Pennsylvania Death Records 622
 
-This repository is the public landing page for the Pennsylvania death-record subset used in the ICDAR paper.
+Public landing page for the official 622-image Pennsylvania death-record subset used in [arXiv:2509.09722](https://arxiv.org/abs/2509.09722).
 
-The repo intentionally does **not** contain the dataset payload. It provides:
+This repo intentionally stays lightweight:
 
-- one cleanly named download target
-- links to the official images
-- links to the official labels
-- example images
-- example data
-- a data dictionary
-- usage notes for the fields and naming conventions
+- it does not publish the full image payload in the Git tree
+- it keeps the release docs and official labels easy to inspect
+- it shows a few small preview renders from representative official records
+- it avoids local filesystem paths in public-facing text
 
 ## Download
 
-Use the single release asset below for the cleaned dataset package:
+The dataset release tarball is named:
 
 - `PA_DEATH_RECORDS_622_v1.tar.gz`
 
-Release page:
-
-`https://github.com/Tahlor/pa-death-records-622/releases`
+The public archive should be published as a GitHub Release asset for this repository.
 
 ## Official sources
 
-- Images: `F:\labelbox\PA\pa_death_ems\5164\622`
-- Official labels: cleaned release package
-- Release landing page: `https://github.com/Tahlor/pa-death-records-622`
+- Official labels: `data/official/5164_gts.csv`
+- Raw traceability labels: `data/raw/raw_5164_gts_622_FIXED_v2.csv`
+- Intermediate label export: `data/raw/5164_gts_no_post_processing.csv`
+- Release paper: [arXiv:2509.09722](https://arxiv.org/abs/2509.09722)
 
-## Examples
+## Preview images
 
-The examples below are representative official records. They are shown for preview only; the source files are not committed in this repository.
+These are small preview renders from representative official records. They are included so the public README actually shows images.
 
-### Example images
+<p align="center">
+  <img src="examples/preview/0549-04785_blur_k11.jpg" width="220" alt="Preview render for record 41381_1220705043_0549-04785" />
+  <img src="examples/preview/0549-04785_rotate_1deg.jpg" width="220" alt="Preview render for record 41381_1220705043_0549-04785" />
+  <img src="examples/preview/0549-04785_gridwarp_std3.jpg" width="220" alt="Preview render for record 41381_1220705043_0549-04785" />
+  <img src="examples/preview/0567-00432_highlighted.jpg" width="220" alt="Preview render for record 41381_1220705043_0567-00432" />
+</p>
 
-- `41381_1220705043_0549-01468.jpg`
-- `41381_1220705043_0549-04785.jpg`
-- `41381_1220705043_0567-00432.jpg`
-- `41381_1220705043_0567-03648.jpg`
+## Example data
 
-### Example data
+Representative rows from the official release:
 
 | ImageFileName | SelfGivenName | SelfSurname | SelfBirthPlace |
 | --- | --- | --- | --- |
