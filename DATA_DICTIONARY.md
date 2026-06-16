@@ -22,7 +22,7 @@ This release is a curated subset of Pennsylvania death records from the early 20
 
 - Use the official release as the source of truth for experiments.
 - Treat the examples in the README as previews only.
-- If you need the full image payload, download the release archive named `PA_DEATH_RECORDS_622_v1.tar.gz` once it is published.
+- If you need the full image payload, download the release archive named `PA_DEATH_RECORDS_622_v1.zip` once it is published.
 
 ## What is not in this repo
 
